@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="0dp"
+                android:orientation="horizontal"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:background="#fff"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Хабр"
+                    android:textColor="#0E0D0D"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:translationX="140dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user"
+                    android:translationX="280dp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#f7f7f7"
+                android:textColor="#92afc1"
+                android:text="Управление персоналом, Читальный зал"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="30dp"
+                >
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/logo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  nmivan"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 30 января"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="У меня нулевая текучка \n"
+                android:textColor="#0E0D0D"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#171717"
+                android:text="Однажды на заводе, где я работал ИТ-директором, готовили отчетность к какому-то очередному мероприятию. Надо было рассчитать и предоставить показатели по выданному перечню, среди них затесалась текучесть кадров. И тут оказалось, что у меня она равна нулю. \n \nИз руководителей я был такой один, тем самым привлек к себе внимание. Ну и сам удивился – оказывается, когда от тебя не уходят сотрудники, это странно и необычно.  В сумме я работал руководителем лет 7-10 (точно не знаю, какие периоды сюда включать), но нулевая текучка сохранилась.\n\n Никто никогда от меня не уходил, никого никогда я не выгонял. Только набирал.  Нулевая текучка, как показатель, никогда не была моей самоцелью. Но я стараюсь делать так, чтобы вложенные в людей усилия не пропадали даром. Сейчас расскажу примерно, как я руковожу так, что люди не уходят – вдруг что полезное для себя найдете. На полноту раскрытия темы не претендую, т.к. основываюсь только на личном опыте. Вполне возможно, что я всё делаю неправильно. \n Ответственность руководителя  Я всегда считал, что неудачи подчиненного – это неудачи его руководителя. Поэтому всегда улыбаюсь, когда слышу, как начальник на совещании поносит своих подчиненных.  Если я руковожу человеком, и он плохо работает, то я что-то делаю не так, и вывод его на требуемый (мне) уровень – моя задача. Ну т.е. это мне надо думать, как из него человека сделать, а не ему.  Несколько раз об этот пункт спотыкался. Приходит ко мне человек, и через месяц хочет уволиться. Спрашиваю – чего ты? А он – я не соответствую требованиям. Я говорю – тебя-то это почему заботит? Ну как, говорит, я ж плохой, меня надо уволить.  Приходится объяснять, что если он плохо работает, то это что-то не так с моей системой управления, и я ее поменяю. А ему надо не париться и просто работать. Я что-нибудь придумаю.  Учет индивидуальных особенностей  Звучит банально, но я этим пользуюсь. Люди сильно разные, и надо это использовать. Один – хороший разработчик, и ему нужно уединение. Отлично, вот тебе наушники и дальний угол, задачи будешь получать по почте. Другой любит и умеет разговаривать и располагать к себе людей – отлично, иди снимать требования и сдавать задачи.  Третий туго соображает – ок, нефиг ему делать на линии поддержки. У четвертого 8 из 10 по показателю «Удача» — значит, получай самые дурацкие задачи. У пятого не развито абстрактное мышление, не может проектировать решение в голове – отлично, используем корейский завтрак.  Ну и т.д. Было время, когда пробовал всех под одну гребенку чесать – не работает, вызывает внутреннее сопротивление. Все хотят быть собой. \n \nЧё думаете? \n" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Теги:"
+                    android:textStyle="bold"
+                    android:textColor="#171717"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   черт знает что"
+                    android:textColor="#92afc1"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="#000000"
+                android:layout_height="2sp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#f7f7f7"
+                android:textColor="#92afc1"
+                android:text="                                  "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Поделиться публикацией"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#0E0D0D"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="center"
+                    android:src="@drawable/facebook" />
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/twitter"/>
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/telegram"/>
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/whatsapp"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="#d3d3d3"
+                android:layout_height="2sp"/>
+
+
+
+        </LinearLayout>
+
+         </ScrollView>
+
+   </LinearLayout>
+
