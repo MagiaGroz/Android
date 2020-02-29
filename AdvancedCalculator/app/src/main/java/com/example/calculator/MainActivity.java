@@ -133,109 +133,111 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(View view){
-        switch(view.getId()){
-            case R.id.button1 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0") ){
+        switch(view.getId()) {
+            case R.id.button1: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0")) {
                     inputnumber.setText("");
                 }
                 inputnumber.append("1");
                 break;
             }
-            case R.id.button2 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0") ){
+            case R.id.button2: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0")) {
                     inputnumber.setText("");
                 }
                 inputnumber.append("2");
                 break;
             }
-            case R.id.button3 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0") ){
+            case R.id.button3: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0")) {
                     inputnumber.setText("");
                 }
                 inputnumber.append("3");
                 break;
             }
-            case R.id.button4 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0") ){
+            case R.id.button4: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0")) {
                     inputnumber.setText("");
                 }
                 inputnumber.append("4");
                 break;
             }
-            case R.id.button5 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0") ){
+            case R.id.button5: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0")) {
                     inputnumber.setText("");
                 }
                 inputnumber.append("5");
                 break;
             }
-            case R.id.button6 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0") ){
+            case R.id.button6: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0")) {
                     inputnumber.setText("");
                 }
                 inputnumber.append("6");
                 break;
             }
-            case R.id.button7 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0") ){
+            case R.id.button7: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0")) {
                     inputnumber.setText("");
                 }
                 inputnumber.append("7");
                 break;
             }
-            case R.id.button8 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0") ){
+            case R.id.button8: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0")) {
                     inputnumber.setText("");
                 }
                 inputnumber.append("8");
                 break;
             }
-            case R.id.button9 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0") ){
+            case R.id.button9: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN") || inputnumber.getText().toString().equals("0")) {
                     inputnumber.setText("");
                 }
                 inputnumber.append("9");
                 break;
             }
-            case R.id.button0 : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.button0: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if( inputnumber.length()==0) {
+                if (inputnumber.length() == 0) {
                     inputnumber.append("0");
                     break;
                 }
                 if (inputnumber.getText().toString().charAt(0) != '0')
-                        inputnumber.append("0");
+                    inputnumber.append("0");
 
                 break;
             }
-            case R.id.buttonDot : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonDot: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(!dot & inputnumber.length()>0) {
+                if (!dot & inputnumber.length() > 0) {
                     inputnumber.append(".");
-                    dot=true;
+                    dot = true;
                 }
                 break;
             }
-            case R.id.buttonC : {
+            case R.id.buttonC: {
                 inputnumber.setText("");
-                dot=false;
+                dot = false;
+                n1 = 0;
+                n2 = 0;
                 break;
             }
-            case R.id.buttonCE : {
-                if(inputnumber.length()==0)
+            case R.id.buttonCE: {
+                if (inputnumber.length() == 0)
                     break;
-                if(inputnumber.length()==1){
+                if (inputnumber.length() == 1) {
                     inputnumber.setText("");
-                break;
+                    break;
                 }
-                if(inputnumber.length()>2) {
-                    if (inputnumber.getText().toString().charAt(inputnumber.length()-2) == '.') {
+                if (inputnumber.length() > 2) {
+                    if (inputnumber.getText().toString().charAt(inputnumber.length() - 2) == '.') {
                         inputnumber.setText(inputnumber.getText().toString().substring(0, inputnumber.length() - 2));
-                        dot=false;
+                        dot = false;
                         break;
                     }
                 }
@@ -244,151 +246,152 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 break;
             }
-            case R.id.buttonDiv : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN")){
+            case R.id.buttonDiv: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0) {
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
                     if (n1 == Math.floor(n1)) {
-                        n1=(int) (n1);
+                        n1 = (int) (n1);
                     }
                 }
                 inputnumber.setText("");
 
-                sign=Sign.DIV;
+                sign = Sign.DIV;
                 break;
             }
-            case R.id.buttonMinus : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonMinus: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0) {
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
                     if (n1 == Math.floor(n1)) {
-                        n1=(int) (n1);
+                        n1 = (int) (n1);
                     }
                 }
                 inputnumber.setText("");
-                sign=Sign.MINUS;
+                sign = Sign.MINUS;
                 break;
             }
-            case R.id.buttonPlus : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonPlus: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0) {
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
                     if (n1 == Math.floor(n1)) {
-                        n1=(int) (n1);
+                        n1 = (int) (n1);
                     }
                 }
 
                 inputnumber.setText("");
-                sign=Sign.PlUS;
+                sign = Sign.PlUS;
                 break;
             }
-            case R.id.buttonMul : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonMul: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0) {
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
                     if (n1 == Math.floor(n1)) {
-                        n1=(int) (n1);
+                        n1 = (int) (n1);
                     }
                 }
                 inputnumber.setText("");
-                sign=Sign.MUL;
+                sign = Sign.MUL;
                 break;
             }
-            case R.id.buttonSqr : {
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonSqr: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0) {
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1*n1)));
-                    }else {
-                        inputnumber.setText(String.valueOf(n1*n1));
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1 * n1)));
+                    } else {
+                        inputnumber.setText(String.valueOf(n1 * n1));
                     }
                 }
-                    break;
+                break;
             }
-            case R.id.buttonSqrt:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonSqrt: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0){
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
                     n1 = Math.sqrt(n1);
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1)));
-                    }else {
-                        inputnumber.setText(String.valueOf(n1));
-                    }
-
-                }
-            break;}
-            case R.id.buttonCos:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
-                    inputnumber.setText("");
-                }
-                if(inputnumber.length()>0){
-                    n1 = Double.parseDouble(inputnumber.getText().toString());
-                    n1=Math.cos(n1);
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1)));
-                    }else {
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1)));
+                    } else {
                         inputnumber.setText(String.valueOf(n1));
                     }
 
                 }
                 break;
             }
-            case R.id.buttonSin:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonCos: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0){
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
-                    n1=Math.sin(n1);
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1)));
-                    }else {
+                    n1 = Math.cos(n1);
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1)));
+                    } else {
                         inputnumber.setText(String.valueOf(n1));
                     }
 
                 }
                 break;
             }
-            case R.id.buttonTg:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonSin: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0){
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
-                    n1=Math.tan(n1);
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1)));
-                    }else {
+                    n1 = Math.sin(n1);
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1)));
+                    } else {
                         inputnumber.setText(String.valueOf(n1));
                     }
 
                 }
                 break;
             }
-            case R.id.buttonlog:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonTg: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0){
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
-                    n1=Math.log10(n1);
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1)));
-                    }else {
+                    n1 = Math.tan(n1);
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1)));
+                    } else {
+                        inputnumber.setText(String.valueOf(n1));
+                    }
+
+                }
+                break;
+            }
+            case R.id.buttonlog: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
+                    inputnumber.setText("");
+                }
+                if (inputnumber.length() > 0) {
+                    n1 = Double.parseDouble(inputnumber.getText().toString());
+                    n1 = Math.log10(n1);
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1)));
+                    } else {
                         inputnumber.setText(String.valueOf(n1));
                     }
 
@@ -397,138 +400,138 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
 
 
-            case R.id.buttonln:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonln: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0){
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
-                    n1=Math.log(n1);
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1)));
-                    }else {
+                    n1 = Math.log(n1);
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1)));
+                    } else {
                         inputnumber.setText(String.valueOf(n1));
                     }
 
                 }
                 break;
             }
-            case R.id.buttonFactorial:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonFactorial: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0){
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
                     double num = 1;
-                    for(int i=1;i<=n1;i++){
-                        num=num*i;
+                    for (int i = 1; i <= n1; i++) {
+                        num = num * i;
                     }
-                    n1=num;
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1)));
-                    }else {
+                    n1 = num;
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1)));
+                    } else {
                         inputnumber.setText(String.valueOf(n1));
                     }
 
                 }
                 break;
             }
-            case R.id.buttonpower:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonpower: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0){
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
 
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1)));
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1)));
                     }
                     inputnumber.append("^");
-                    sign=Sign.POW;
+                    sign = Sign.POW;
                 }
                 break;
             }
-            case R.id.buttonpercent:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonpercent: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                 }
-                if(inputnumber.length()>0){
+                if (inputnumber.length() > 0) {
                     n1 = Double.parseDouble(inputnumber.getText().toString());
-                    n1=n1/100;
-                    if(n1 == Math.floor(n1)) {
-                        inputnumber.setText(String.valueOf((int)(n1)));
-                    }else {
+                    n1 = n1 / 100;
+                    if (n1 == Math.floor(n1)) {
+                        inputnumber.setText(String.valueOf((int) (n1)));
+                    } else {
                         inputnumber.setText(String.valueOf(n1));
                     }
 
                 }
                 break;
             }
-            case R.id.buttonEqual:{
-                if(inputnumber.getText().toString().equals("Error")||inputnumber.getText().toString().equals("NaN") ){
+            case R.id.buttonEqual: {
+                if (inputnumber.getText().toString().equals("Error") || inputnumber.getText().toString().equals("NaN")) {
                     inputnumber.setText("");
                     break;
                 }
 
-                if(inputnumber.length()>0){
+                if (inputnumber.length() > 0 ) {
 
-                    if(sign==Sign.POW){
-                        int index=0;
-                        for(int i=0;i<inputnumber.length();i++){
-                            if(inputnumber.getText().toString().charAt(i)=='^') {
+                    if (sign == Sign.POW) {
+                        int index = 0;
+                        for (int i = 0; i < inputnumber.length(); i++) {
+                            if (inputnumber.getText().toString().charAt(i) == '^') {
                                 index = i;
                                 break;
                             }
                         }
 
-                        n2 = Double.parseDouble(inputnumber.getText().subSequence(index+1,inputnumber.length()).toString());
+                        n2 = Double.parseDouble(inputnumber.getText().subSequence(index + 1, inputnumber.length()).toString());
                         if (n2 == Math.floor(n2)) {
                             n2 = (int) (n2);
                         }
-                    }
-                    else {
+                    } else {
                         n2 = Double.parseDouble(inputnumber.getText().toString());
                         if (n2 == Math.floor(n2)) {
                             n2 = (int) (n2);
                         }
                     }
+                } else {
+                    break;
                 }
-                else {
-                    break;}
+if(n2==0){
+    break;
+}
 
-                    if (sign == Sign.PlUS) {
-                        result = n1 +n2 ;
-                    }
+                if (sign == Sign.PlUS) {
+                    result = n1 + n2;
+                }
 
-                    if (sign == Sign.MINUS) {
-                        result = n1 -n2 ;
+                if (sign == Sign.MINUS) {
+                    result = n1 - n2;
+                }
+                if (sign == Sign.MUL) {
+                    result = n1 * n2;
+                }
+                if (sign == Sign.DIV) {
+                    if (Math.floor(n2) == 0) {
+                        inputnumber.setText("Error");
+                        break;
                     }
-                    if (sign == Sign.MUL) {
-                        result = n1 *n2 ;
-                    }
-                    if (sign == Sign.DIV) {
-                        if(Math.floor(n2)==0){
-                            inputnumber.setText("Error");
-                            break;
-                        }
-                        result = n1 /n2 ;
+                    result = n1 / n2;
 
-                    }
-                    if(sign==Sign.POW){
-                        result=Math.pow(n1,n2);
-                    }
+                }
+                if (sign == Sign.POW) {
+                    result = Math.pow(n1, n2);
+                }
 
-                    if((result == Math.floor(result)) && !Double.isInfinite(result)) {
-                        inputnumber.setText(String.valueOf((int) result));
+                if ((result == Math.floor(result)) && !Double.isInfinite(result)) {
+                    inputnumber.setText(String.valueOf((int) result));
 
-                    }
-                    else {
-                         inputnumber.setText(Double.toString(result));
-                         dot=true;
-                    }
+                } else {
+                    inputnumber.setText(Double.toString(result));
+                    dot = true;
+                }
 
-                    //n2=0.0d;
-
+                n2=0;
 
             }
         }
